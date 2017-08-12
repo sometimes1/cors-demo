@@ -18,16 +18,16 @@ response.setHeader('Access-Control-Allow-Origin','http://fang.com')
     var string = fs.readFileSync('./index.html', 'utf8')  
     response.setHeader('Content-Type', 'text/html;charset=utf-8')  
     response.end(string)   
-  }else if(path === '/qq'){   
-    var string = fs.readFileSync('./qq.html', 'utf8')
+  }else if(path === '/ll'){   
+    var string = fs.readFileSync('./ll.html', 'utf8')
     response.setHeader('Content-Type', 'text/html')
     response.end(string)
   }else if(path === '/fang'){  
     var string = fs.readFileSync('./fang.html', 'utf8')
     response.setHeader('Content-Type', 'text/html')
     response.end(string)
-  }else if(path === '/qq_private'){  
-    var string = fs.readFileSync('./qq_private.json')
+  }else if(path === '/ll_private'){  
+    var string = fs.readFileSync('./ll_private.json')
     response.setHeader('Content-Type', 'application/json')
     response.end(string)
   }else{  
